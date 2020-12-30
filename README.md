@@ -26,14 +26,14 @@ Helpful commands and options to remember
   -type   Search by file type
   ```
 ###### find examples
-    ```
-    # Find file with the name foo.txt
-    find / -name <foo.txt>
-    # Find script named foo.sh and execute it
-    find / -name foo.sh 2>&1 -exec {} \;
-    # Find script named foo.sh and execute it but ignore "Permission Denied" search warnings
-    find / -name foo.sh 2>&1 -exec {} \; | grep -v "Permission denied"
-    ```
+  ```
+  # Find file with the name foo.txt
+  find / -name <foo.txt>
+  # Find script named foo.sh and execute it
+  find / -name foo.sh 2>&1 -exec {} \;
+  # Find script named foo.sh and execute it but ignore "Permission Denied" search warnings
+  find / -name foo.sh 2>&1 -exec {} \; | grep -v "Permission denied"
+  ```
     
 ### docker
    ```
