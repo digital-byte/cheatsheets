@@ -29,3 +29,16 @@ Helpful commands and options to remember
     ```
     find / -name <foo.txt>
     ```
+### Docker
+   ```
+   # List all containers
+   docker ps -aq
+   # Get only container IDs
+   docker container ls | awk '{print $1}'
+   # Stop all containers
+   docker stop $(docker ps -aq)
+   # Remove all containers
+   docker rm $(docker ps -aq)
+   # Remove all images
+   docker rmi $(docker images -q)
+   ```
