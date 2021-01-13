@@ -48,3 +48,18 @@ Helpful commands and options to remember
    # Remove all images
    docker rmi $(docker images -q)
    ```
+Log in with docker default user  
+`docker exec -it <dockerid> /bin/bash`
+
+Log in force to be root  
+`docker exec -u root -it <dockerid> /bin/bash`
+
+Tail logs for your container  
+`docker logs -f <dockerid> --tail 200`
+
+Show mem/cpu usage of your container  
+`docker stats --no-stream=true $(docker ps -q) | sed -n '1!p' | sed 's/ \+/,/g' | awk -F',' '{print $1","$2","$3","$7}'`
+
+show the processes running in your container  
+`docker top <dockerid> | sed -n '1!p' | sed 's/ \+/ /g'`
+
