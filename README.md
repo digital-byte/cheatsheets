@@ -16,6 +16,8 @@ Helpful commands and options to remember
   /     Search forward
   ?     Search backward
   n     Find next occurrence
+  u     undo last change, can be repeated
+  U     undo all changes on line
   ```
 
 ### find
